@@ -1,5 +1,5 @@
 import xlrd
-import numpy
+import pandas
 
 
 def get_worksheet(file_path):
@@ -14,4 +14,4 @@ def get_dataset(file_path):
   for row_index in range(1, worksheet.nrows):
     dataset.append([rowElement for rowElement in worksheet.row_values(row_index, 1) if rowElement])
 
-  return dataset
+  return pandas.DataFrame(dataset)
