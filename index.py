@@ -5,8 +5,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 
-# excel_workbook_path = 'D:\PycharmProjects\PythonLabs\Нейронные сети\BackPropagation\\athero.xls'
-excel_workbook_path = '.\Data.xls'
+excel_workbook_path = 'D:\Backpropagation\\Data.xlsx'
 
 input_dataset = dataset_reader.get_dataset(excel_workbook_path).values
 
